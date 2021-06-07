@@ -1,0 +1,68 @@
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header nav {
+    float: right;
+    padding-top: 15px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+div {
+    height: 1000px;
+    background-color: rgb(238, 234, 238);
+}
+
+.fab {
+    font-size: 100px;
+    color: rgb(6, 6, 233);
+}
+
+header {
+    background-color: blueviolet;
+    height: 60px;
+}
+
+main {
+    margin-top: 20px;
+    background-color: orange;
+    height: 250px;
+}
+
+main h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: impact;
+    color: rgb(9, 5, 235);
+    text-align: center;
+}
+
+main p {
+    font-size: 30px;
+    padding-top: 10px;
+    height: 60px;
+}
+
+main section img {
+    width: 100%;
+    margin-top: 150px;
+}
+
+
+/* sticky footer */
+
+footer p {
+    text-align: center;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    margin-top: 580px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
