@@ -150,7 +150,7 @@ if (myBrothersNum === 8) {
 let count = 0;
 let myFavLang = prompt('guess what programming language I know ?');
 while (count < 6 && myFavLang !== 'javascript' && myFavLang !== 'python' && myFavLang !== 'c++' && myFavLang !== 'java' && myFavLang !== 'kotlin' && myFavLang !== 'php') {
-    myFavLang = prompt('guess what programming language I know again please ?');
+    myFavLang = prompt('guess what programming language I know again please ?').toLowerCase();
     count++;
 }
 if (myFavLang === myFavLang === 'javascript' || myFavLang === 'python' || myFavLang === 'c++' || myFavLang === 'java' || myFavLang === 'kotlin' || myFavLang === 'php') {
