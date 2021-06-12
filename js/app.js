@@ -107,5 +107,4 @@ function checkFavLang() {
 fiveQuestion();
 guessNumGame();
 checkFavLang();
-alert('you score is : ' + score + ' out of 7');
-alert('Its nice to have you in our website ' + userName + ' , we hope that you visit our website again');
+alert('Its nice to have you in our website ' + userName + ' , we hope that you will visit our website again And you score is : ' + score + ' out of 7');
