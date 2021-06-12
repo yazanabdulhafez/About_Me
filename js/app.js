@@ -81,25 +81,31 @@ function guessNumGame() {
     return (score);
 }
 
-function favLanguage() {
-    let programLang = ['javascript', 'python', 'c++', 'java', 'kotlin', 'php'];
-    let count = 0;
-    let myFavLang = prompt('guess what programming language I know ?');
-    while (count < 6 && myFavLang !== programLang[0] && myFavLang !== programLang[1] && myFavLang !== programLang[2] && myFavLang !== programLang[3] && myFavLang !== programLang[4] && myFavLang !== programLang[5]) {
-        myFavLang = prompt('guess what programming language I know again please ?').toLowerCase();
-        count++;
-    }
-    if (myFavLang === 'javascript' || myFavLang === 'python' || myFavLang === 'c++' || myFavLang === 'java' || myFavLang === 'kotlin' || myFavLang === 'php') {
-        alert('will done , you are correct');
-        score = score + 1;
-    } else {
-        alert('you are not correct');
-    }
+function checkFavLang() {
 
-    return (score);
+    let programLang = ['javascript', 'python', 'c++', 'java', 'kotlin', 'php'];
+    let myFavLang = '';
+    for (let i = 0; i < 6; i++) {
+        myFavLang = prompt('what my favorite programming language?').toLowerCase();
+        for (let j = 0; j < programLang.length; j++) {
+
+            if (myFavLang === programLang[j]) {
+                alert('you are right');
+                i = 6;
+                score++;
+                break;
+            }
+
+        }
+        if (i === 5) {
+            alert('no more trials \n' + 'the right answers are = ' + programLang);
+        } else if (i < 6) {
+            alert('this is wrong');
+        }
+    }
 }
 fiveQuestion();
 guessNumGame();
-favLanguage();
+checkFavLang();
 alert('you score is : ' + score + ' out of 7');
 alert('Its nice to have you in our website ' + userName + ' , we hope that you visit our website again');
